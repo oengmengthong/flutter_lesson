@@ -1,5 +1,14 @@
 # flutter_lesson
  
+ Version 0.0.1 
+  have Component :
+   Button
+   Text Field
+   List
+   Grid
+   
+   
+ 
  <p float="left">
   <img src="https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png" width="400" />
   <img src="https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563422280.png" width="400" /> 
