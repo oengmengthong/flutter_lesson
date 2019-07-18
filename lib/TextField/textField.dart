@@ -91,9 +91,7 @@ class TextFieldFlutter extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
-                          height: 20,
-                        ),
+                        Divider(),
                         Row(
                           children: <Widget>[
                             Expanded(
@@ -178,9 +176,7 @@ class TextFieldFlutter extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
-                          height: 20,
-                        ),
+                        Divider(),
                         Row(
                           children: <Widget>[
                             Expanded(
@@ -245,9 +241,7 @@ class TextFieldFlutter extends StatelessWidget {
                                 )),
                           ),
                         ),
-                        SizedBox(
-                          height: 20,
-                        ),
+                        Divider(),
                         Row(
                           children: <Widget>[
                             Expanded(
@@ -302,9 +296,7 @@ class TextFieldFlutter extends StatelessWidget {
                             labelText: 'Alarm',
                           ),
                         ),
-                        SizedBox(
-                          height: 20,
-                        ),
+                        Divider(),
                         Row(
                           children: <Widget>[
                             Expanded(

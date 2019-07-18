@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'TextField/textField.dart';
 import 'buttons/buttons.dart';
+import 'listview/listview.dart';
 
 void main() => runApp(MyApp());
 
@@ -63,6 +64,7 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                 ),
+                Divider(),
                 ListTile(
                   title: Text('v0.0.1 beta1'),
                 )
@@ -134,9 +136,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: 20,
-            ),
+            Divider(),
             Row(
               children: <Widget>[
                 Expanded(
@@ -184,6 +184,65 @@ class HomeScreen extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => TextFieldFlutter(),
+                                ),
+                              );
+                            },
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Divider(),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'ListView Flutter: ',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          FlatButton(
+                            color: Colors.blue,
+                            child: Row(
+                              children: <Widget>[
+                                Icon(
+                                  Icons.arrow_drop_down_circle,
+                                  color: Colors.white,
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  'View All',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ListViewFlutter(),
                                 ),
                               );
                             },

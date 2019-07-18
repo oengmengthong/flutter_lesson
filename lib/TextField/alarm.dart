@@ -27,7 +27,9 @@ class TextFieldAlarm extends StatelessWidget {
                 TextFormField(
                   maxLength: 20,
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.access_alarm),
+                    prefixIcon: Icon(
+                      Icons.access_alarm,
+                    ),
                     labelText: 'Alarm',
                   ),
                 ),

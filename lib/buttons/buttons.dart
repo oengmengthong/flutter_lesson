@@ -84,6 +84,7 @@ class ButtonFlutter extends StatelessWidget {
                 )
               ],
             ),
+            Divider(),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
@@ -117,6 +118,7 @@ class ButtonFlutter extends StatelessWidget {
                 ),
               ],
             ),
+            Divider(),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
@@ -148,6 +150,7 @@ class ButtonFlutter extends StatelessWidget {
                 ),
               ],
             ),
+            Divider(),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
@@ -176,6 +179,7 @@ class ButtonFlutter extends StatelessWidget {
                 )
               ],
             ),
+            Divider(),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
@@ -204,6 +208,7 @@ class ButtonFlutter extends StatelessWidget {
                 )
               ],
             ),
+            Divider(),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
@@ -228,6 +233,7 @@ class ButtonFlutter extends StatelessWidget {
                 ),
               ],
             ),
+            Divider(),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
@@ -255,6 +261,7 @@ class ButtonFlutter extends StatelessWidget {
                 )
               ],
             ),
+            Divider(),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
