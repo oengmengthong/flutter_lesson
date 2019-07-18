@@ -1,9 +1,9 @@
 # flutter_lesson
  
  <p float="left">
-  <img src="https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png" width="100" />
-  <img src="https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png" width="100" /> 
-  <img src="https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png" width="100" />
+  <img src="https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png" width="200" />
+  <img src="https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png" width="200" /> 
+  <img src="https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png" width="200" />
 </p>
  
 ![alt text-1](https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png "title-1") 
