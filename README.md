@@ -1,12 +1,7 @@
 # flutter_lesson
  
  Version 0.0.1 
-  have Component :
-   Button
-   Text Field
-   List
-   Grid
-   
+  have Component : Button; Text Field; List; Grid
    
  
  <p float="left">
