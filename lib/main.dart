@@ -78,46 +78,60 @@ class HomeScreen extends StatelessWidget {
           children: <Widget>[
             Row(
               children: <Widget>[
-                Text(
-                  'Button Flutter: ',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.blue,
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                FlatButton(
-                  color: Colors.blue,
-                  child: Row(
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Icon(
-                        Icons.arrow_drop_down_circle,
-                        color: Colors.white,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
                       Text(
-                        'View All',
+                        'Button Flutter: ',
                         style: TextStyle(
-                          color: Colors.white,
+                          fontSize: 20,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic,
                         ),
                       ),
                     ],
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ButtonFlutter(),
+                ),
+                Expanded(
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          FlatButton(
+                            color: Colors.blue,
+                            child: Row(
+                              children: <Widget>[
+                                Icon(
+                                  Icons.arrow_drop_down_circle,
+                                  color: Colors.white,
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  'View All',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ButtonFlutter(),
+                                ),
+                              );
+                            },
+                          )
+                        ],
                       ),
-                    );
-                  },
-                )
+                    ],
+                  ),
+                ),
               ],
             ),
             SizedBox(
@@ -125,46 +139,60 @@ class HomeScreen extends StatelessWidget {
             ),
             Row(
               children: <Widget>[
-                Text(
-                  'TextField Flutter: ',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.blue,
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                FlatButton(
-                  color: Colors.blue,
-                  child: Row(
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Icon(
-                        Icons.arrow_drop_down_circle,
-                        color: Colors.white,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
                       Text(
-                        'View All',
+                        'TextField Flutter: ',
                         style: TextStyle(
-                          color: Colors.white,
+                          fontSize: 20,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic,
                         ),
                       ),
                     ],
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => TextFieldFlutter(),
+                ),
+                Expanded(
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          FlatButton(
+                            color: Colors.blue,
+                            child: Row(
+                              children: <Widget>[
+                                Icon(
+                                  Icons.arrow_drop_down_circle,
+                                  color: Colors.white,
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  'View All',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => TextFieldFlutter(),
+                                ),
+                              );
+                            },
+                          )
+                        ],
                       ),
-                    );
-                  },
-                )
+                    ],
+                  ),
+                ),
               ],
             ),
           ],
