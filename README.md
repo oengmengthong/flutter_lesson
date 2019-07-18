@@ -1,8 +1,8 @@
 # flutter_lesson
  
-![alt text](https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png)
+![alt text](https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563356674.png) ![alt text](https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563422280.png)
 
-![alt text](https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563422280.png)
+
 
 ![alt text](https://github.com/oengmengthong/flutter_lesson/blob/master/images/Screenshot_1563422285.png)
 
