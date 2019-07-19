@@ -10,6 +10,18 @@ class ListTileFlutter extends StatelessWidget {
         title: Center(
           child: Text('List Tile'),
         ),
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.pageview),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CodeViewTile(),
+                  ),
+                );
+              }),
+        ],
       ),
       body: Center(
         child: ListView(
@@ -19,33 +31,6 @@ class ListTileFlutter extends StatelessWidget {
               padding: EdgeInsets.all(20),
               child: Column(
                 children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      MaterialButton(
-                        height: 35,
-                        color: Colors.pink,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        child: Row(
-                          children: <Widget>[
-                            Icon(
-                              Icons.remove_red_eye,
-                              color: Colors.pink[100],
-                            ),
-                            SizedBox(
-                              width: 5,
-                            ),
-                            Text('View Code'),
-                          ],
-                        ),
-                        onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) =>CodeViewTile(),),);
-                        },
-                      ),
-                    ],
-                  ),
                   ListTile(
                     title: Text('Tile 0: basic'),
                   ),
@@ -80,17 +65,10 @@ class ListTileFlutter extends StatelessWidget {
                   ListTile(
                     leading: CircleAvatar(
                       backgroundColor: Colors.red,
-                      child: Icon(
-                        Icons.ac_unit,
-                        color: Colors.white,
-                      ),
-                    ),
+                      child: Icon(Icons.ac_unit,color: Colors.white,),),
                     title: Text('List View using leading icon'),
                     subtitle: Text('subtitle'),
-                    trailing: Icon(
-                      Icons.ac_unit,
-                      color: Colors.red,
-                    ),
+                    trailing: Icon(Icons.ac_unit, color: Colors.red,),
                   ),
                 ],
               ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'TextField/textField.dart';
 import 'buttons/buttons.dart';
 import 'listview/listview.dart';
@@ -37,6 +36,21 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             UserAccountsDrawerHeader(
+              otherAccountsPictures: <Widget>[
+                CircleAvatar(
+                  radius: 40,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('images/flutterr.png'),
+                ),
+              ],
+              currentAccountPicture: CircleAvatar(
+                radius: 40,
+                backgroundColor: Colors.white,
+                child: CircleAvatar(
+                  radius: 35,
+                  backgroundImage: AssetImage('images/myprofile.jpg'),
+                ),
+              ),
               accountName: Text(
                 'Oeng Mengthong',
                 style: TextStyle(fontSize: 20, color: Colors.black),
@@ -44,16 +58,17 @@ class HomeScreen extends StatelessWidget {
               accountEmail: Text(
                 'mengthongoenggl@gmail.com',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
               ),
               decoration: BoxDecoration(
-                color: Colors.lightBlueAccent,
+                color: Colors.white,
               ),
             ),
             Column(
               children: <Widget>[
                 ListTile(
+                  leading: Icon(Icons.account_box),
                   title: Text('About Us'),
                   onTap: () {
                     Navigator.push(
@@ -66,8 +81,11 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Divider(),
                 ListTile(
-                  title: Text('v0.0.1 beta1'),
-                )
+                  title: Text(
+                    'v0.0.1 beta1',
+                    textAlign: TextAlign.end,
+                  ),
+                ),
               ],
             )
           ],
@@ -85,7 +103,7 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'Button Flutter: ',
+                        'Button: ',
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.blue,
@@ -128,7 +146,7 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               );
                             },
-                          )
+                          ),
                         ],
                       ),
                     ],
@@ -144,7 +162,7 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'TextField Flutter: ',
+                        'TextField: ',
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.blue,
@@ -187,7 +205,7 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               );
                             },
-                          )
+                          ),
                         ],
                       ),
                     ],
@@ -203,7 +221,7 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'ListView Flutter: ',
+                        'ListView: ',
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.blue,
@@ -246,7 +264,7 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               );
                             },
-                          )
+                          ),
                         ],
                       ),
                     ],
