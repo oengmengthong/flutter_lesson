@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lesson/TextField/email.dart';
+import 'package:flutter_lesson/TextField/formvalidator.dart';
 import 'package:flutter_lesson/TextField/password.dart';
 import 'package:flutter_lesson/TextField/textArea.dart';
 
@@ -27,6 +28,50 @@ class TextFieldFlutter extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                            Expanded(
+                              flex: 2,
+                              child: Row(
+                                children: <Widget>[
+                                  Text('Form Validator'),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              flex: 1,
+                              child: Row(
+                                children: <Widget>[
+                                  MaterialButton(
+                                    shape: BeveledRectangleBorder(
+                                      borderRadius: BorderRadius.circular(5),
+                                    ),
+                                    color: Colors.blue,
+                                    child: Row(
+                                      children: <Widget>[
+                                        Text(
+                                          'View',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => FormValidator(),
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                        Divider(),
                         Row(
                           children: <Widget>[
                             Expanded(
@@ -61,7 +106,13 @@ class TextFieldFlutter extends StatelessWidget {
                                           ],
                                         ),
                                         onPressed: () {
-                                          Navigator.push(context, MaterialPageRoute(builder: (context) =>TextFieldName(),),);
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  TextFieldName(),
+                                            ),
+                                          );
                                         },
                                       ),
                                     ],
@@ -126,7 +177,13 @@ class TextFieldFlutter extends StatelessWidget {
                                           ],
                                         ),
                                         onPressed: () {
-                                          Navigator.push(context, MaterialPageRoute(builder: (context) => TextFieldEmail(),),);
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  TextFieldEmail(),
+                                            ),
+                                          );
                                         },
                                       ),
                                     ],
@@ -158,6 +215,7 @@ class TextFieldFlutter extends StatelessWidget {
                               Icons.email,
                               color: Colors.red,
                             ),
+                            suffixIcon: Icon(Icons.email),
                             suffixText: 'Email',
                             suffixStyle: TextStyle(
                               color: Colors.red,
@@ -211,7 +269,13 @@ class TextFieldFlutter extends StatelessWidget {
                                           ],
                                         ),
                                         onPressed: () {
-                                          Navigator.push(context, MaterialPageRoute(builder: (context) =>TextFieldPassword(),),);
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  TextFieldPassword(),
+                                            ),
+                                          );
                                         },
                                       ),
                                     ],
@@ -227,13 +291,13 @@ class TextFieldFlutter extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.all(8),
                           child: TextField(
-
                             obscureText: true,
                             decoration: InputDecoration(
                                 filled: true,
                                 focusedErrorBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(color: Colors.red,)
-                                ),
+                                    borderSide: BorderSide(
+                                  color: Colors.red,
+                                )),
                                 labelText: "Password",
                                 prefixIcon: Icon(Icons.lock),
                                 border: OutlineInputBorder(
@@ -276,7 +340,13 @@ class TextFieldFlutter extends StatelessWidget {
                                           ],
                                         ),
                                         onPressed: () {
-                                          Navigator.push(context, MaterialPageRoute(builder: (context) => TextFieldAlarm(),),);
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  TextFieldAlarm(),
+                                            ),
+                                          );
                                         },
                                       ),
                                     ],
@@ -331,7 +401,13 @@ class TextFieldFlutter extends StatelessWidget {
                                           ],
                                         ),
                                         onPressed: () {
-                                          Navigator.push(context, MaterialPageRoute(builder: (context) =>TextFieldArea(),),);
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  TextFieldArea(),
+                                            ),
+                                          );
                                         },
                                       ),
                                     ],
