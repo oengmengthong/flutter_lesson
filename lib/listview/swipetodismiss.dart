@@ -17,6 +17,7 @@ class MySwipeToDismiss extends State<SwipeToDismiss> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.lightBlueAccent,
         title: Center(
           child: Text('Swipe To Dismiss'),
         ),
@@ -66,6 +67,7 @@ class CodeViewSwipeDismiss extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.lightBlueAccent,
         title: Center(
           child: Text('Swipe To Dismiss'),
         ),

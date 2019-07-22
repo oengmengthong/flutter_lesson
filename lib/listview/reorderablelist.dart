@@ -15,6 +15,7 @@ class ReOrderList extends State<ReOrderableList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.lightBlueAccent,
         title: Center(
           child: Text('Reorder List'),
         ),
@@ -79,6 +80,7 @@ class ViewCodeReOrderList extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.lightBlueAccent,
         title: Center(
           child: Text('ReOrder List'),
         ),

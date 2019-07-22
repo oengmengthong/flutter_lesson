@@ -26,6 +26,7 @@ class Validator extends State<FormValidator> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.lightBlueAccent,
         title: Center(
           child: Text('Form Validator'),
         ),
@@ -178,7 +179,7 @@ class Validator extends State<FormValidator> {
     if (value.isEmpty) {
       return 'Phone Number cannot be empty';
     }
-    final RegExp phoneExp = RegExp(r'(^(?:[+0]9)?[0-9]{9,12}$)');
+    final RegExp phoneExp = RegExp(r'^[()\d -]{9,15}$');
     if (!phoneExp.hasMatch(value)) return 'Enter a correct phone number.';
     return null;
   }

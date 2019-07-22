@@ -6,6 +6,7 @@ class ExpansionTileEX extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.lightBlueAccent,
         title: Center(
           child: Text('ExpansionTile'),
         ),
