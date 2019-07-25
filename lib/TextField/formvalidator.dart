@@ -127,7 +127,7 @@ class Validator extends State<FormValidator> {
                                   person.password);
                             }
                           },
-                          child: Text('Submit'),
+                          child: Text('LOGIN'),
                         ),
                       ),
                     ],

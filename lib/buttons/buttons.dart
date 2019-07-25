@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lesson/buttons/report.dart';
-
 import 'add.dart';
 import 'clock.dart';
 import 'flower.dart';
@@ -36,8 +35,8 @@ class ButtonFlutter extends StatelessWidget {
               children: <Widget>[
                 Text(
                   'For FlatButton & RadioButton need to use inside\n'
-                      'ButtonTheme for set height. But i recommend to use\n'
-                      'MaterialButton. MaterialButton can custome more style.',
+                  'ButtonTheme for set height. But i recommend to use\n'
+                  'MaterialButton. MaterialButton can custome more style.',
                   textAlign: TextAlign.start,
                 )
               ],
@@ -78,7 +77,12 @@ class ButtonFlutter extends StatelessWidget {
                       ],
                     ),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => ReportButton(),),);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ReportButton(),
+                        ),
+                      );
                     },
                   ),
                 )
@@ -112,7 +116,12 @@ class ButtonFlutter extends StatelessWidget {
                       ],
                     ),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) =>MapButton(),),);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MapButton(),
+                        ),
+                      );
                     },
                   ),
                 ),
@@ -145,7 +154,12 @@ class ButtonFlutter extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>FlowerButton(),),);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FlowerButton(),
+                      ),
+                    );
                   },
                 ),
               ],
@@ -174,7 +188,12 @@ class ButtonFlutter extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>ClockButton(),),);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ClockButton(),
+                      ),
+                    );
                   },
                 )
               ],
@@ -203,7 +222,12 @@ class ButtonFlutter extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>FoodButton(),),);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FoodButton(),
+                      ),
+                    );
                   },
                 )
               ],
@@ -228,7 +252,12 @@ class ButtonFlutter extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => GoalButton(),),);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => GoalButton(),
+                      ),
+                    );
                   },
                 ),
               ],
@@ -256,7 +285,12 @@ class ButtonFlutter extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => PublicButton(),),);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PublicButton(),
+                      ),
+                    );
                   },
                 )
               ],
@@ -285,7 +319,12 @@ class ButtonFlutter extends StatelessWidget {
                     ],
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => AddButton(),),);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => AddButton(),
+                      ),
+                    );
                   },
                 )
               ],
@@ -300,4 +339,3 @@ class ButtonFlutter extends StatelessWidget {
     );
   }
 }
-
